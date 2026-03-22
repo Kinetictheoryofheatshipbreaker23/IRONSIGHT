@@ -15,6 +15,7 @@ import SatellitePanel from '@/components/panels/SatellitePanel';
 import NavalPanel from '@/components/panels/NavalPanel';
 import RegionalAlertsPanel from '@/components/panels/RegionalAlertsPanel';
 import CryptoPanel from '@/components/panels/CryptoPanel';
+import PolymarketPanel from '@/components/panels/PolymarketPanel';
 import { useState, useEffect } from 'react';
 
 const ConflictMap = dynamic(() => import('@/components/map/ConflictMap'), {
@@ -97,17 +98,20 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* === ROW 2: Conflicts, Strikes (under map), Oil, Mil Air, Naval === */}
+        {/* === ROW 2: Markets, Strikes, Polymarket, Conflicts, Flights === */}
         <div className="col-span-3 min-h-0">
           <MarketsPanel />
         </div>
-        <div className="col-span-4 min-h-0">
+        <div className="col-span-3 min-h-0">
           <StrikesPanel />
+        </div>
+        <div className="col-span-2 min-h-0">
+          <PolymarketPanel />
         </div>
         <div className="col-span-2 min-h-0">
           <ConflictFeed />
         </div>
-        <div className="col-span-3 min-h-0">
+        <div className="col-span-2 min-h-0">
           <FlightsPanel />
         </div>
 
