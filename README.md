@@ -1,5 +1,7 @@
 # IRONSIGHT
 
+![IRONSIGHT Dashboard](Ironsight.png)
+
 Real-time OSINT command center for monitoring the Middle East conflict. Aggregates open-source intelligence from 50+ sources across news, Telegram, military tracking, financial markets, and more into a single dashboard.
 
 Built with Next.js, TypeScript, Tailwind CSS, and Leaflet. No API keys required. Completely free to run.
