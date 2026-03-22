@@ -1,3 +1,5 @@
+import CITY_DATA from './city-data';
+
 // Hebrew to English translations for Pikud HaOref alert terms
 // The alert system uses a fixed vocabulary so a dictionary works perfectly
 
@@ -35,118 +37,18 @@ export const THREAT_TRANSLATIONS: Record<string, string> = {
   // Instructions
   'היכנסו למרחב המוגן': 'Enter Protected Space',
   'היכנסו למבנה': 'Enter Building',
+
+  // Military/weapon terms for partial matching
+  'טיל': 'Missile',
+  'מטוס': 'Aircraft',
+  'מסוק': 'Helicopter',
+  'מל"ט': 'Drone',
+  'רחפן': 'Drone',
 };
 
-// Common Israeli city/area translations
-export const CITY_TRANSLATIONS: Record<string, string> = {
-  'תל אביב': 'Tel Aviv',
-  'תל אביב - יפו': 'Tel Aviv - Jaffa',
-  'ירושלים': 'Jerusalem',
-  'חיפה': 'Haifa',
-  'באר שבע': 'Beer Sheva',
-  'אשדוד': 'Ashdod',
-  'אשקלון': 'Ashkelon',
-  'שדרות': 'Sderot',
-  'נתיבות': 'Netivot',
-  'אילת': 'Eilat',
-  'עכו': 'Acre',
-  'נהריה': 'Nahariya',
-  'צפת': 'Safed',
-  'טבריה': 'Tiberias',
-  'קריית שמונה': 'Kiryat Shmona',
-  'כרמיאל': 'Carmiel',
-  'עפולה': 'Afula',
-  'בית שאן': 'Beit She\'an',
-  'מגידו': 'Megiddo',
-  'חדרה': 'Hadera',
-  'נתניה': 'Netanya',
-  'הרצליה': 'Herzliya',
-  'רמת גן': 'Ramat Gan',
-  'פתח תקווה': 'Petah Tikva',
-  'ראשון לציון': 'Rishon LeZion',
-  'רחובות': 'Rehovot',
-  'לוד': 'Lod',
-  'רמלה': 'Ramla',
-  'מודיעין': 'Modi\'in',
-  'בת ים': 'Bat Yam',
-  'חולון': 'Holon',
-  'בני ברק': 'Bnei Brak',
-  'גבעתיים': 'Givatayim',
-  'כפר סבא': 'Kfar Saba',
-  'רעננה': 'Ra\'anana',
-  'הוד השרון': 'Hod HaSharon',
-  'דימונה': 'Dimona',
-  'דימון': 'Dimona',
-  'ערד': 'Arad',
-  'מצפה רמון': 'Mitzpe Ramon',
-  'עין גדי': 'Ein Gedi',
-  'קריית גת': 'Kiryat Gat',
-  'אופקים': 'Ofakim',
-  'יבנה': 'Yavne',
-  'גדרה': 'Gedera',
-
-  // Regional councils / areas
-  'עוטף עזה': 'Gaza Envelope',
-  'שער הנגב': 'Sha\'ar HaNegev',
-  'אשכול': 'Eshkol',
-  'חוף אשקלון': 'Hof Ashkelon',
-  'שפלת יהודה': 'Judean Foothills',
-  'לכיש': 'Lachish',
-  'מרחב שלמה': 'Merhav Shlomo',
-  'יואב': 'Yoav',
-  'הגליל העליון': 'Upper Galilee',
-  'הגליל התחתון': 'Lower Galilee',
-  'מרום הגליל': 'Merom HaGalil',
-  'מטה אשר': 'Mateh Asher',
-  'גולן': 'Golan',
-  'עמק יזרעאל': 'Jezreel Valley',
-  'מגילות ים המלח': 'Dead Sea Scrolls',
-  'ערבה תיכונה': 'Central Arava',
-  'בקעת הירדן': 'Jordan Valley',
-  'עמק המעיינות': 'Springs Valley',
-  'מנשה': 'Menashe',
-  'מרכז הגליל': 'Central Galilee',
-
-  // Gush Dan area
-  'גוש דן': 'Gush Dan',
-  'שרון': 'Sharon',
-  'השרון': 'HaSharon',
-
-  // South
-  'נגב': 'Negev',
-  'הנגב': 'HaNegev',
-
-  // North
-  'גליל': 'Galilee',
-  'כנרת': 'Kinneret',
-  'עמק חפר': 'Hefer Valley',
-
-  // Cities near borders
-  'מטולה': 'Metula',
-  'שלומי': 'Shlomi',
-  'מעלות': 'Ma\'alot',
-  'מעלות-תרשיחא': 'Ma\'alot-Tarshiha',
-  'מרגליות': 'Margaliot',
-  'יראון': 'Yir\'on',
-  'אביבים': 'Avivim',
-  'דן': 'Dan',
-  'סאסא': 'Sasa',
-  'עין פורעה': 'Ein Porea',
-  'עין הבשור': 'Ein HaBesor',
-  'כפר גלעדי': 'Kfar Giladi',
-  'מנרה': 'Manara',
-  'דפנה': 'Dafna',
-  'יפתח': 'Yiftah',
-  'בית הלל': 'Beit Hillel',
-  'הגושרים': 'HaGoshrim',
-  'שניר': 'Senir',
-
-  // General
-  'כל הארץ': 'Entire Country',
-  'מרכז הארץ': 'Central Israel',
-  'צפון הארץ': 'Northern Israel',
-  'דרום הארץ': 'Southern Israel',
-};
+// Israeli locality translations - 1,266 official localities from Israel CBS (data.gov.il)
+// plus custom additions for regions, alert-specific terms, and alternate spellings
+export const CITY_TRANSLATIONS: Record<string, string> = CITY_DATA;
 
 /**
  * Translate a Hebrew string to English using the lookup tables.
