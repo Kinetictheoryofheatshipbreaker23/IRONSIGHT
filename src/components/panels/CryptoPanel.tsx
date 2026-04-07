@@ -18,7 +18,7 @@ const SYMBOL_COLORS: Record<string, string> = {
 };
 
 export default function CryptoPanel() {
-  const { data: prices, loading } = useDataFeed<CryptoData[]>('/api/crypto', 300000);
+  const { data: prices, loading } = useDataFeed<CryptoData[]>('/api/crypto', 600000);
 
   return (
     <div className="panel h-full flex flex-col">

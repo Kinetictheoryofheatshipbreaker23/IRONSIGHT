@@ -18,7 +18,7 @@ export async function GET() {
   // Source 1: Tzeva Adom API - mirrors Pikud HaOref real-time alerts
   try {
     const res = await fetchWithTimeout('https://api.tzevaadom.co.il/notifications', {
-      timeout: 8000,
+      timeout: 12000,
       headers: {
         'User-Agent': 'IronSight/1.0',
         'Accept': 'application/json',

@@ -39,6 +39,8 @@ const CHANNELS = [
   { name: 'sepah', label: 'IRGC Official', color: '#774433' },
   { name: 'wamnews_en', label: 'WAM (UAE)', color: '#c4a535' },
   { name: 'gulfnewsUAE', label: 'Gulf News', color: '#e6b800' },
+  { name: 'Alibk3', label: 'Ali Bk', color: '#44bb88' },
+  { name: 'aljazeeraglobal', label: 'Al Jazeera', color: '#d4a843' },
 ];
 
 interface TelegramPost {

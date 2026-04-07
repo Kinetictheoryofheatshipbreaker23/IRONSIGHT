@@ -29,7 +29,7 @@ const TYPE_ICONS: Record<string, string> = {
 };
 
 export default function AlertsPanel() {
-  const { data, loading } = useDataFeed<AlertData>('/api/alerts', 5000);
+  const { data, loading } = useDataFeed<AlertData>('/api/alerts', 15000);
   const prevStatus = useRef<string>('CLEAR');
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [hasInteracted, setHasInteracted] = useState(false);

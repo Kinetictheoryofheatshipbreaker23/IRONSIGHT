@@ -333,7 +333,7 @@ export default function ConflictMap({ className }: MapProps) {
   // Data feeds
   const { data: flights } = useDataFeed<FlightData>('/api/flights', 180000);
   const { data: naval } = useDataFeed<NavalData>('/api/ships', 300000);
-  const { data: alerts } = useDataFeed<AlertData>('/api/alerts', 5000);
+  const { data: alerts } = useDataFeed<AlertData>('/api/alerts', 15000);
   const { data: conflicts } = useDataFeed<ConflictEvent[]>('/api/conflicts', 180000);
   const { data: strikes } = useDataFeed<StrikeData[]>('/api/strikes', 120000);
   const { data: telegram } = useDataFeed<TelegramData>('/api/telegram', 60000);

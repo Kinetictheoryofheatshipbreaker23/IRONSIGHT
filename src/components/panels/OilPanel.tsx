@@ -12,7 +12,7 @@ interface OilData {
 }
 
 export default function OilPanel() {
-  const { data: prices, loading } = useDataFeed<OilData[]>('/api/oil', 300000);
+  const { data: prices, loading } = useDataFeed<OilData[]>('/api/oil', 600000);
 
   return (
     <div className="panel h-full flex flex-col">

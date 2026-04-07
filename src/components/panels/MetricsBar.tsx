@@ -11,7 +11,7 @@ interface OilData {
 }
 
 export default function MetricsBar() {
-  const { data: oilData } = useDataFeed<OilData[]>('/api/oil', 300000);
+  const { data: oilData } = useDataFeed<OilData[]>('/api/oil', 600000);
 
   const wti = oilData?.find(o => o.type === 'crude_wti');
   const brent = oilData?.find(o => o.type === 'crude_brent');

@@ -31,7 +31,7 @@ function formatVolume(v: number): string {
 }
 
 export default function PolymarketPanel() {
-  const { data, loading } = useDataFeed<PolymarketData>('/api/polymarket', 300000);
+  const { data, loading } = useDataFeed<PolymarketData>('/api/polymarket', 600000);
 
   return (
     <div className="panel h-full flex flex-col">
